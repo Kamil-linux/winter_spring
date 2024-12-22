@@ -12,7 +12,7 @@ pipeline {
         post {
         always {
             echo 'This will always run'
-            junit 'targer/surefire-reports/*.xml'
+            junit 'target/surefire-reports/*.xml'
             // deleteDir()
         }
         success {
